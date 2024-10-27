@@ -1,0 +1,342 @@
+.birthstone-regular {
+  font-family: "Birthstone", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 50px;
+ 
+}
+
+
+.event-card {
+  max-width: 400px; /* Set a max width to prevent overflowing */
+  margin: 16px auto; /* Center card and add space around */
+}
+
+/* Hover effect */
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Event image styling */
+.event-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Event image hover effect */
+.event-card:hover img {
+  opacity: 0.95;
+}
+
+/* Event information container */
+.event-info {
+  padding: 16px;
+  text-align: left;
+}
+
+/* Event name styling */
+.event-info h3 {
+  font-size: 1.25rem;
+  color: #333; /* Darker, but softened black */
+  margin: 0 0 8px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Event date styling */
+.event-info p:nth-child(2) {
+  font-size: 0.9rem;
+  color: #007bff; /* Soft blue */
+  font-weight: 500;
+  margin: 4px 0;
+  text-align: left;
+}
+
+/* Event location styling */
+.event-info p:nth-child(3) {
+  font-size: 0.9rem;
+  color: #555555; /* Subtle dark gray */
+  font-weight: 400;
+  margin: 4px 0;
+  text-align: left;
+} */
+
+
+Close button styles
+.close-button {
+  background-color: transparent; /* No background */
+  border: none; /* Remove border */
+  font-size: 1.5em; /* Increase size */
+  cursor: pointer; /* Pointer cursor */
+  position: absolute; /* Position it inside the modal */
+  top: 10px; /* Position from the top */
+  right: 10px; /* Position from the right */
+  color: #ff0000; /* Red color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.close-button:hover {
+  color: #cc0000; /* Darker red on hover */
+}
+/* View more button styles */
+.view-more-button {
+  background-color: #3c3c3d; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.view-more-button:hover {
+  background-color: #08456e; /* Darker blue on hover */
+  transform: scale(1.05);
+}
+
+.event-list p {
+  color: #08456e; /* A distinct color for the message */
+  font-size: 1.2em; /* Slightly larger font size */
+  text-align: center; /* Center the message */
+  margin-top: 20px; /* Add some space above the message */
+}
+
+
+/* modal css */
+
+/* Keyframes for the fade-in and fade-out animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Modal overlay with fade-in effect */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 0.4s forwards; /* Fades in when modal opens */
+}
+
+/* Modal content styling */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  text-align: center;
+  transform: scale(0.95);
+  animation: fadeIn 0.3s forwards, scaleIn 0.3s forwards;
+}
+
+/* Fade-out animation on modal close */
+.modal-overlay.fade-out {
+  animation: fadeOut 0.4s forwards; /* Fades out when modal closes */
+}
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.modal-content img {
+  width: 100%; /* Full width of the modal */
+  max-width: 400px; /* Set a max width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: add rounded corners */
+  margin: 10px 0; /* Add margin */
+}
+
+/* src/App.css */
+
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  color: #08456e;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 60%;
+  border: 1px solid #033759;
+  border-radius: 4px;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  flex-direction: column; /* Stack items vertically by default for mobile */
+  padding: 20px;
+  background-color: transparent; /* Remove grey background */
+}
+
+.app-header h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 3rem; /* Adjust font size as needed */
+}
+
+.app-header input {
+  padding: 8px;
+  width: 60%;
+  border: 1px solid #033759;
+  border-radius: 4px;
+}
+
+/* Media query for desktop responsiveness */
+@media (min-width: 768px) {
+  .app-header {
+    flex-direction: row; 
+    justify-content: space-between; 
+  }
+
+  .app-header h1 {
+    margin-right: 20px; 
+  }
+
+  
+}
+
+
+input[type="text"]:focus {
+  box-shadow: 0 0 9px rgba(0, 123, 255, 0.6);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.view-more-button:active,
+.close-button:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
+}
+/* Keyframes for heading animation */
+@keyframes slideScaleFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.8);
+  }
+  60% {
+    opacity: 0.7;
+    transform: translateY(10px) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Apply animation to the heading */
+.birthstone-regular {
+  font-family: "Birthstone", cursive;
+  font-weight: 600;
+  font-size: 50px;
+  animation: slideScaleFadeIn 1s ease-out forwards;
+}
+
+/* Keyframes for modal image animation */
+@keyframes zoomFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  60% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply animation to the modal image */
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  animation: zoomFadeIn 0.8s ease-out forwards;
+  transition: transform 0.3s ease; /* for smooth scaling on hover */
+}
+
+/* Optional: Hover effect for a slight zoom */
+.modal-content img:hover {
+  transform: scale(1.05);
+}
+/* Styling for the 'No matches found' message */
+.no-matches-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  color: #555;
+  font-family: Arial, sans-serif;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.no-matches-container img {
+  width: 350px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+  transition: transform 0.5s ease;
+}
+
+.no-matches-container img:hover {
+  transform: scale(1.05);
+}
+
+.no-matches-container p {
+  font-size: 1.2rem;
+  color: #1a2178;
+  margin: 5px 0;
+}
+
+.no-matches-container .suggestions {
+  font-size: 0.9rem;
+  color: #2f2d2d;
+  margin-top: 10px;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
