@@ -1,4 +1,4 @@
-// src/components/EventListing.js
+
 import React from 'react';
 import EventCard from './EventCard';
 import { events } from '../data';
