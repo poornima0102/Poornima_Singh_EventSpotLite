@@ -41,7 +41,7 @@
 /* Event name styling */
 .event-info h3 {
   font-size: 1.25rem;
-  color: #333; /* Darker, but softened black */
+  color: #333;
   margin: 0 0 8px;
   font-weight: 600;
   line-height: 1.2;
@@ -50,7 +50,7 @@
 /* Event date styling */
 .event-info p:nth-child(2) {
   font-size: 0.9rem;
-  color: #007bff; /* Soft blue */
+  color: #007bff; 
   font-weight: 500;
   margin: 4px 0;
   text-align: left;
@@ -59,50 +59,50 @@
 /* Event location styling */
 .event-info p:nth-child(3) {
   font-size: 0.9rem;
-  color: #555555; /* Subtle dark gray */
+  color: #555555; 
   font-weight: 400;
   margin: 4px 0;
   text-align: left;
-} */
+} 
 
 
 Close button styles
 .close-button {
-  background-color: transparent; /* No background */
-  border: none; /* Remove border */
-  font-size: 1.5em; /* Increase size */
-  cursor: pointer; /* Pointer cursor */
-  position: absolute; /* Position it inside the modal */
-  top: 10px; /* Position from the top */
-  right: 10px; /* Position from the right */
-  color: #ff0000; /* Red color */
-  transition: color 0.3s ease; /* Smooth transition */
+  background-color: transparent;
+  border: none; 
+  font-size: 1.5em; 
+  cursor: pointer; 
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+  color: #ff0000; 
+  transition: color 0.3s ease;
 }
 
 .close-button:hover {
-  color: #cc0000; /* Darker red on hover */
+  color: #cc0000; 
 }
 /* View more button styles */
 .view-more-button {
-  background-color: #3c3c3d; /* Blue background */
-  color: white; /* White text */
-  border: none; /* No border */
-  padding: 10px 15px; /* Padding */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor */
-  transition: background-color 0.3s ease; /* Smooth transition */
+  background-color: #3c3c3d; 
+  color: white; 
+  border: none; 
+  padding: 10px 15px; 
+  border-radius: 5px;
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
 }
 
 .view-more-button:hover {
-  background-color: #08456e; /* Darker blue on hover */
+  background-color: #08456e; 
   transform: scale(1.05);
 }
 
 .event-list p {
-  color: #08456e; /* A distinct color for the message */
-  font-size: 1.2em; /* Slightly larger font size */
-  text-align: center; /* Center the message */
-  margin-top: 20px; /* Add some space above the message */
+  color: #08456e; 
+  font-size: 1.2em; 
+  text-align: center; 
+  margin-top: 20px; 
 }
 
 
@@ -166,11 +166,11 @@ Close button styles
   margin-bottom: 15px;
 }
 .modal-content img {
-  width: 100%; /* Full width of the modal */
-  max-width: 400px; /* Set a max width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: add rounded corners */
-  margin: 10px 0; /* Add margin */
+  width: 100%; 
+  max-width: 400px;
+  height: auto; 
+  border-radius: 8px; 
+  margin: 10px 0;
 }
 
 /* src/App.css */
@@ -213,8 +213,8 @@ input[type="text"] {
 }
 
 .app-header h1 {
-  margin: 0; /* Remove default margin */
-  font-size: 3rem; /* Adjust font size as needed */
+  margin: 0; 
+  font-size: 3rem; 
 }
 
 .app-header input {
@@ -264,7 +264,7 @@ input[type="text"]:focus {
   }
 }
 
-/* Apply animation to the heading */
+/*  animation to the heading */
 .birthstone-regular {
   font-family: "Birthstone", cursive;
   font-weight: 600;
@@ -288,7 +288,7 @@ input[type="text"]:focus {
   }
 }
 
-/* Apply animation to the modal image */
+/* animation to the modal image */
 .modal-content img {
   width: 100%;
   border-radius: 10px;
@@ -296,7 +296,7 @@ input[type="text"]:focus {
   transition: transform 0.3s ease; /* for smooth scaling on hover */
 }
 
-/* Optional: Hover effect for a slight zoom */
+/* Hover effect for a slight zoom */
 .modal-content img:hover {
   transform: scale(1.05);
 }
