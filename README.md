@@ -30,6 +30,7 @@ EventSpot Lite is a responsive single-page web application designed to help user
 3. **Run the Application**:
    npm start
 
+Website link: https://eventspotlitee.netlify.app/
 
 **Usage**
 
