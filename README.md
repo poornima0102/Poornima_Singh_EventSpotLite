@@ -10,7 +10,8 @@ EventSpot Lite is a responsive single-page web application designed to help user
 - **Search Functionality**: Filter events by name or location with a responsive search bar.
 - **Event Details Modal**: Click on an event to view more details, including a description and an image.
 - **Responsive Design**: The application looks great on desktops, tablets, and mobile devices.
-- **Smooth Animations**: Enjoy polished animations for interactions like hover effects, modal transitions, and button   feedback.
+- **Smooth Animations**: Enjoy polished animations for interactions like hover effects, modal transitions, and button feedback.
+- **Loading Indicators**: The spinner appears during data fetching or other asynchronous actions and disappears when the data is successfully loaded.
 
 ## Technologies Used
 
