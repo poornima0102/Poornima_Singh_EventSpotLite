@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { events } from './data';  // Import mock event data
+import { events } from './data';  
 import EventCard from './components/EventCard';
 import EventModal from './components/EventModal';
 import LoadingSpinner from './components/LoadingSpinner';
@@ -7,7 +7,7 @@ import LoadingSpinner from './components/LoadingSpinner';
 const App = () => {
   const [query, setQuery] = useState('');
   const [selectedEvent, setSelectedEvent] = useState(null);
-  const [loading, setLoading] = useState(true);  // State for loading
+  const [loading, setLoading] = useState(true);  
 
   // Simulate data fetching
   useEffect(() => {
@@ -69,5 +69,3 @@ const App = () => {
 };
 
 export default App;
-
-
